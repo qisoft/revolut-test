@@ -35,8 +35,6 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "redux-saga-jest": "^0.1.0",
-    "redux-saga-test-plan": "^3.7.0"
+    "enzyme-adapter-react-16": "^1.9.1"
   }
 }

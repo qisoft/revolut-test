@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import {COLORS} from '../../constants';
 
 export const DropdownCurrency = styled.div`
   height: 75px;
@@ -7,7 +8,7 @@ export const DropdownCurrency = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid ${COLORS.backgroundDark};
   box-sizing: border-box;
   cursor: pointer;
   &:last-child {

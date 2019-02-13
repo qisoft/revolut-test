@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import { IoIosTrendingUp, IoIosArrowRoundForward } from 'react-icons/io';
 import styled from 'styled-components/macro';
 import { formatRate } from '../utils';
+import {COLORS} from '../constants';
 
 const ExchangeRateIndicatorWrapper = styled.div`
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: ${COLORS.backgroundLight};
   border-radius: 15px;
-  border: 2px solid #eeeeee;
+  border: 2px solid ${COLORS.backgroundDark};
   height: 30px;
   padding: 0 10px;
 `;

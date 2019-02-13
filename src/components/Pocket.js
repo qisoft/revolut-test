@@ -5,13 +5,14 @@ import NumberFormat from 'react-number-format';
 import BalanceIndicator from './BalanceIndicator';
 import CurrencyDropdown from './CurrencyDropdown';
 import {getPrecisionMultiplier, processAmountInput} from '../utils';
+import {COLORS} from '../constants';
 
 const PocketWrapper = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${props => props.isPlus ? '#eeeeee' : '#ffffff'};
+  background-color: ${props => props.isPlus ? COLORS.backgroundDark : COLORS.backgroundLight};
   padding: 20px;
 `;
 
@@ -22,7 +23,7 @@ const AmountInput = styled.input`
   font-size: 32px;
   max-width: 100%;
   width: 100%;
-  color: ${props => props.isValid ? '#000000' : '#ff0000'}
+  color: ${props => props.isValid ? COLORS.text : COLORS.errorText}
   &:focus {
     outline: none;
   }

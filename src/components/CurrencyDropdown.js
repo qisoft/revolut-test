@@ -5,6 +5,7 @@ import 'currency-flags/dist/currency-flags.css';
 import {IoMdArrowDropdown} from 'react-icons/io';
 import {CurrentCurrencyFlag} from './styled/CurrentCurrencyFlag';
 import CurrencyDropdownItem from './CurrencyDropdownItem';
+import {COLORS} from '../constants';
 
 const CurrencyDropDownWrapper = styled.div`
   display: flex;
@@ -21,8 +22,8 @@ const Dropdown = styled.div`
   height: 300px;
   width: 300px;
   overflow: auto;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  background: ${COLORS.backgroundLight};
+  border: 1px solid ${COLORS.backgroundDark};
   top: 50%;
   left: 50%;
   margin-top: -200px;

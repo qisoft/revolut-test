@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 import { IoIosRepeat } from 'react-icons/io';
+import {COLORS} from '../constants';
 
 const Button = styled.button`
-  border: 1px solid #eeeeee;
-  background: #ffffff;
+  border: 1px solid ${COLORS.backgroundDark};
+  background: ${COLORS.backgroundLight};
   height: 40px;
   width: 40px;
   border-radius: 20px;

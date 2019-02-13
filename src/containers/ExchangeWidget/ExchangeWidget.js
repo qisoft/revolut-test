@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { SUPPORTED_CURRENCIES } from '../../constants';
+import {COLORS, SUPPORTED_CURRENCIES} from '../../constants';
 import {
   exchangeBetweenPockets,
   changeAmountFrom,
@@ -43,23 +43,24 @@ const Separator = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#eeeeee 51%,#eeeeee 100%);
+  background: linear-gradient(to bottom, ${COLORS.backgroundLight} 0%,${COLORS.backgroundLight}
+   50%,${COLORS.backgroundDark} 51%,${COLORS.backgroundDark} 100%);
   order: 2;
   padding: 0 15px;
 `;
 
 const ExchangeButton = styled.button`
   height: 40px;
-  background: #D52F8A;
+  background: ${COLORS.brand};
   border-radius: 20px;
   border: none;
   padding: 0 15px;
-  color: #ffffff;
+  color: ${COLORS.backgroundLight};
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   &:disabled {
-    background: #EFC4E2;
+    background: ${COLORS.brandDisabled};
   }
 `;
 

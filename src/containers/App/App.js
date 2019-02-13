@@ -16,11 +16,11 @@ class App extends Component {
   render() {
     return (
       <AppContainer>
-        <ErrorToast errorMessage={this.props.error} />
+        <ErrorToast errorMessage={this.props.errorText} />
         <ExchangeWidget/>
       </AppContainer>
     );
   }
 }
 
-export default connect(({ network: { error } }) => ({ error }))(App);
+export default connect(({ network: { error } }) => ({ error: errorText }))(App);

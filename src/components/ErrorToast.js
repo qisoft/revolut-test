@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components/macro';
+import {COLORS} from '../constants';
 
 const slideIn = keyframes`
     100% { transform: translateY(0%); }
 `;
 
 const Toast = styled.div`
-  background: #F2E5E5;
-  color: #ff0000;
+  background: ${COLORS.errorBackground};
+  color: ${COLORS.errorText};
   padding: 10px;
   width: 100%;
   position: absolute;

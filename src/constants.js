@@ -20,7 +20,7 @@ export const COLORS = {
   brand: '#D52F8A',
   brandDisabled: '#EFC4E2',
   text: '#000000',
-  backgroundLight: '#FFFFFFF',
+  backgroundLight: '#FFFFFF',
   backgroundDark: '#EEEEEE',
   errorText: '#FF00000',
   errorBackground: '#F2E5E5',

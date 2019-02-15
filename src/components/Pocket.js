@@ -23,7 +23,7 @@ const AmountInput = styled.input`
   font-size: 32px;
   max-width: 100%;
   width: 100%;
-  color: ${props => props.isValid ? COLORS.text : COLORS.errorText}
+  color: ${props => props.isValid ? COLORS.text : COLORS.errorText};
   &:focus {
     outline: none;
   }

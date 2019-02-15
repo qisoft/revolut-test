@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default connect(({ network: { error } }) => ({ error: errorText }))(App);
+export default connect(({ network: { error } }) => ({ errorText: error  }))(App);
